@@ -125,11 +125,16 @@ footer p {
   }
 
   article {
-    margin: 1rem auto;
+    margin: 1.5rem auto 1rem;
+    max-width: 30em;
   }
 
-  ul {
-    margin: 0;
+  article p:first-child {
+    margin: 1rem 0;
+  }
+
+  article p:last-child {
+    margin-bottom: 2rem;
   }
 
   main {
@@ -141,6 +146,7 @@ footer p {
   main div {
     display: flex;
     flex-direction: column;
+    margin-top: 0;
   }
 
   main div p {
@@ -148,6 +154,7 @@ footer p {
   }
 
   ul {
+    margin: 0;
     justify-content: space-between;
   }
 
@@ -155,9 +162,8 @@ footer p {
 
 @media only screen and (min-width: 60em) {
 
-  html {
-    font-size: 110%;
-    line-height: 1.4;
+  nav {
+    width: 400px;
   }
 
 }
