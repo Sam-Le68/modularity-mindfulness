@@ -40,6 +40,7 @@ article {
   border-bottom: .2rem solid #e2e2e2;
   max-width: 25em;
   text-align: center;
+  padding: 0 1rem;
 }
 
 .logo {
@@ -56,6 +57,7 @@ ul {
   padding: 0;
   justify-content: space-around;
   margin-top: 0;
+  font-size: 1rem;
 }
 
 a {
@@ -66,12 +68,20 @@ article p:first-child {
   font-size: 2rem;
 }
 
+h2 {
+  font-size: 1rem;
+}
+
 h3 {
   margin-top: 1rem;
 }
 
 h4 {
   margin-bottom: .5rem;
+}
+
+i {
+  font-style: normal;
 }
 
 .btn {
@@ -96,7 +106,7 @@ footer p {
   text-align: center;
 }
 
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 38em) {
 
   .header {
     display: flex;
@@ -106,12 +116,12 @@ footer p {
   }
 
   .logo {
-    width: 50%;
+    width: 60%;
     text-align: left;
   }
 
   nav {
-    width: 50%;
+    width: 40%;
   }
 
   article {
@@ -137,9 +147,13 @@ footer p {
     flex-grow: 1;
   }
 
+  ul {
+    justify-content: space-between;
+  }
+
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 60em) {
 
   html {
     font-size: 110%;
@@ -148,19 +162,11 @@ footer p {
 
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 90em) {
 
   html {
     font-size: 120%;
     line-height: 1.5;
-  }
-
-}
-
-@media only screen and (min-width: 38em) {
-
-  html {
-    font-size: 130%;
   }
 
 }
