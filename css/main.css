@@ -130,7 +130,11 @@ footer p {
 
   main div {
     display: flex;
-    align-items: stretch;
+    flex-direction: column;
+  }
+
+  main div p {
+    flex-grow: 1;
   }
 
 }
