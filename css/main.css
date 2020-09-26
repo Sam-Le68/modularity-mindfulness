@@ -25,3 +25,27 @@ img {
   display: block;
   width: 100%;
 }
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+header, article, main {
+  margin: 0 1rem;
+  border-bottom: .2rem solid #e2e2e2;
+}
+
+.title {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+}
+
+a {
+  color: #3783a3;
+}
