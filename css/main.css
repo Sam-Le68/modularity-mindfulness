@@ -30,13 +30,24 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
-article, main {
-  margin: 2rem 1rem;
-  border-top: .2rem solid #e2e2e2;
+header {
+  margin: 1rem 1rem 0;
 }
 
-header div {
+article {
+  margin: 1rem;
+  border-top: .2rem solid #e2e2e2;
+  border-bottom: .2rem solid #e2e2e2;
+  max-width: 25em;
   text-align: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+main {
+  margin: 0 1rem;
 }
 
 ul {
@@ -44,6 +55,7 @@ ul {
   display: flex;
   padding: 0;
   justify-content: space-around;
+  margin-top: 0;
 }
 
 a {
@@ -52,13 +64,6 @@ a {
 
 article p:first-child {
   font-size: 2rem;
-  text-align: center;
-  margin: 1rem .5rem 1.5rem;
-}
-
-article p:last-child {
-  text-align: center;
-  margin: 0 1rem;
 }
 
 h3 {
@@ -75,16 +80,84 @@ h4 {
   border-radius: .3rem;
   padding: .5em 1em .6em;
   display: block;
+  margin-top: 2rem;
 }
 
 main div {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 footer {
   border-top: .2rem solid #e2e2e2;
+  margin-top: 1.5rem;
 }
 
 footer p {
   text-align: center;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    width: 50%;
+    text-align: left;
+  }
+
+  nav {
+    width: 50%;
+  }
+
+  article {
+    margin: 1rem auto;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  main div {
+    display: flex;
+    align-items: stretch;
+  }
+
+}
+
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 130%;
+  }
+
 }
